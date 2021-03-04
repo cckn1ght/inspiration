@@ -7,6 +7,6 @@ Inspiration 是一个类似 [Momentum](https://chrome.google.com/webstore/detail
 Chrome Web Store应用还在提交审核中，目前想体验的话可以下载整个项目，进入 Chrome [插件管理页面](chrome://extensions/)，打开右上角的开发者模式，选择最左边的「Load unpacked」按钮，选择项目下的「build」文件夹即可。
 
 一些截图：
-![1](./screen-shorts/1.png)
-![2](./screen-shorts/2.png)
-![3](./screen-shorts/3.png)
+![1](./screen-shots/1.png)
+![2](./screen-shots/2.png)
+![3](./screen-shots/3.png)
