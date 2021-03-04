@@ -8,9 +8,9 @@ function App() {
     time: DateTime.local(),
     quote: randomQuote(),
   });
-  function getBGStyle(category = 'HK') {
+  function getBGStyle() {
     return {
-      backgroundImage: `url(https://source.unsplash.com/random/2560x1600)`,
+      // backgroundImage: `url(https://source.unsplash.com/random/2560x1600)`,
       backgroundSize: 'cover',
       height: '100vh'
     }
@@ -20,7 +20,7 @@ function App() {
   }
 
   return (
-    <div style={getBGStyle()}>
+    <div id="cover" style={getBGStyle()}>
       <div className="bg-wrapper">
         <div className="centered">
           <p className="quote-text" onClick={onQuoteClick}>
