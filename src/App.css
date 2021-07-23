@@ -24,6 +24,14 @@
   cursor: default;
 }
 
+.quote-text-small {
+  font-size: 1.5vw;
+}
+
+.quote-text-xs {
+  font-size: 1vw;
+}
+
 .quote-author {
   font-family: "Helvetica Neue";
   color: white;

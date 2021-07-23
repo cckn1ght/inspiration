@@ -1,8 +1,6 @@
 const imageUrl = "https://source.unsplash.com/random/2560x1600"
 
 chrome.storage.local.get(['currentCover', 'initCover'], function (result) {
-  console.log("get storage: ");
-  console.log(result);
   if (result.currentCover || result.initCover) {
     if (result.currentCover) {
       setBg(result.currentCover)
@@ -25,13 +23,10 @@ function fetchCurrentCover(setImage) {
         if (setImage) {
           setBg(base64img);
         }
-        chrome.storage.local.set({ currentCover: base64img }, function () {
-          console.log("set storage" + base64img);
-        });
+        chrome.storage.local.set({ currentCover: base64img });
       }
     }).catch(err => console.error(err))
 }
 function setBg(base64img) {
-  // document.getElementById("cover").style.backgroundImage = "url('data:image/png;base64," + base64img + "')"
   document.getElementById("cover").style.backgroundImage = "url('" + base64img + "')"
 }
